@@ -168,7 +168,9 @@ class MainWindow(qtw.QMainWindow):
         self.coffee_list = qtw.QTableView()
         self.coffee_list.setModel(self.coffees_model)
         self.stack.addWidget(self.coffee_list)
-
+        #on page 228 in the book it says to use
+        # self.mapper.model().select(). 
+        # this does not work. Mapper is used on the Coffee_form class
         self.coffees_model.select()
         #self.show()
         #return
